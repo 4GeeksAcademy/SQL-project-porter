@@ -22,14 +22,15 @@ SELECT * FROM observations;
 
 
 -- MISSION 1
--- Your query here;
+SELECT * from observations
+LIMIT 10;
 
 -- MISSION 2
--- Your query here;
+SELECT DISTINCT region_id from observations;
 
 
 -- MISSION 3
--- Your query here;
+SELECT COUNT (DISTINCT species_id) as total_species from observations
 
 
 -- MISSION 4
