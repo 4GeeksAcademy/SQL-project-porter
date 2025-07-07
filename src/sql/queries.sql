@@ -34,20 +34,21 @@ SELECT COUNT (DISTINCT species_id) as total_species from observations
 
 
 -- MISSION 4
--- Your query here;
+SELECT * from observations where region_id = 2;
 
 
 -- MISSION 5
--- Your query here;
+SELECT * from observations where observation_date = 1998-08-08;
 
 
 -- MISSION 6
--- Your query here;
+SELECT region_id COUNT (*) from observations group by region_id; 
 
 
 -- MISSION 7
--- Your query here;
+SELECT species_id COUNT (*) from observations group by species_id order by total_records
+LIMIT 5;
 
 
 -- MISSION 8
--- Your query here;
+SELECT species_id COUNT(*) from observations group by species_id having total_records < 5;
